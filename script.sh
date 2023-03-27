@@ -9,7 +9,7 @@ git clone --recurse-submodules https://github.com/fairyglade/ly ~/.local/src/ly
 sudo systemctl disable lightdm && sudo systemctl enable ly && test -f ./ly.config && sudo cp ./ly.config /etc/ly/config.ini
 
 # install dwm
-sudo apt install -y libx11-dev libxft-dev libxinerama-dev
+sudo apt install -y libx11-dev libxft-dev libxinerama-dev dmenu
 (cd ./dwm-patched && make)
 (cd ~/.local/src/ly && sudo make clean install)
 
