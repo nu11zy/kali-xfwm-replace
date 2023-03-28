@@ -13,5 +13,6 @@ sudo apt install -y libx11-dev libxft-dev libxinerama-dev dmenu
 (cd ./dwm-patched && make)
 (cd ~/.local/src/ly && sudo make clean install)
 
-# Remove all xfce shortcuts: keyboard -> application shortcuts
-# Go to session manager and disable autostart for xfwm and desktop
+# Keyboard -> application shortcuts -> select and remove all
+# Go to session manager -> application autostart -> disable "user folders update" -> add dwm in autostart ->
+# -> current session -> disable xfwm, xfce-panel, xfdesktop -> save session -> reboot
